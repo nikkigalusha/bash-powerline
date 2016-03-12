@@ -50,14 +50,14 @@ __powerline() {
   readonly BOLD="\[$(tput bold)\]"
 
   __git_info() {
-    # Check for Git
+    # Check to see whether Git is installed
     [ -x "$(which git)" ] || return
 
     # Force Git output to English
     local git_eng="env LANG=C git"
-    # Get current branch name or short SHA1 hash for detached head
+    # Get the current branch name or short SHA1 hash for detached head
     local branch="$($git_eng symbolic-ref --short HEAD 2>/dev/null || $git_eng describe --tags --always 2>/dev/null)"
-    # Check for Git branch
+    # Check for a Git branch
     [ -n "$branch" ] || return
 
     local marks
@@ -77,8 +77,9 @@ __powerline() {
   }
 
   ps1() {
-      PS1="$BG_BASE3$FG_BASE03 \W $RESET"
-      PS1+="$BG_RED$FG_BASE03$(__git_info)$RESET\n└─▪"
+    # Change \W to \w to show the current working directory instead of the base name
+    PS1="$BG_BASE3$FG_BASE03 \W $RESET"
+    PS1+="$BG_RED$FG_BASE03$(__git_info)$RESET\n└─▪"
   }
 
   # Enable the ability to open new tabs in the current working directory
