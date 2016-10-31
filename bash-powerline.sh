@@ -78,7 +78,7 @@ __powerline() {
 
   ps1() {
     # Change \W to \w to show the current working directory instead of the base name
-    PS1="$BG_BASE3$FG_BASE02 \W $RESET"
+    PS1="$BG_BASE3$FG_BASE02 \w $RESET"
     PS1+="$BG_ORANGE$FG_BASE02$(__git_info)$RESET\n└─▪"
   }
 
