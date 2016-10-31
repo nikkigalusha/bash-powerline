@@ -26,3 +26,5 @@ $ echo source ~/.bash-powerline.sh >> ~/.bash_profile
 ```
 
 The theme used in the screenshot is [Tomorrow Night Eighties](https://github.com/chriskempson/tomorrow-theme/tree/master/OS%20X%20Terminal).
+
+This command line prompt is based on the phenomenal [bash-powerline](http://learn.makerpass.com/groups/mks-52/courses/reactorcore/course.syllabus?s=3&p=5) by [riobard](https://github.com/riobard).
