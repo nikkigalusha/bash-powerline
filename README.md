@@ -22,7 +22,7 @@ $ curl https://raw.githubusercontent.com/bcmarinacci/bash-powerline/master/bash-
 
 Then source it in your `.bash_profile` (or `.bashrc`).
 ```bash
-$ echo source ~/.bash-powerline.sh >> ~/.bash_profile
+$ echo -e "\nsource ~/.bash-powerline.sh" >> ~/.bash_profile
 ```
 
 The theme used in the screenshot is [Tomorrow Night Eighties](https://github.com/chriskempson/tomorrow-theme/tree/master/OS%20X%20Terminal).
