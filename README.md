@@ -15,16 +15,18 @@ Powerline for Bash in pure Bash script.
 
 ## Installation
 
-Download the Bash script.
+Download and save the Bash script.
 ```bash
 $ curl https://raw.githubusercontent.com/bcmarinacci/bash-powerline/master/bash-powerline.sh > ~/.bash-powerline.sh
 ```
 
-Then source it in your `.bash_profile` (or `.bashrc`).
+Then add it to your `.bash_profile` (or `.bashrc`).
 ```bash
 $ echo -e "\nsource ~/.bash-powerline.sh" >> ~/.bash_profile
 ```
 
-The theme used in the screenshot is [Tomorrow Night Eighties](https://github.com/chriskempson/tomorrow-theme/tree/master/OS%20X%20Terminal).
+## Acknowledgements
 
-This command line prompt is based on the phenomenal [bash-powerline](http://learn.makerpass.com/groups/mks-52/courses/reactorcore/course.syllabus?s=3&p=5) by [riobard](https://github.com/riobard).
+The command line prompt is based on the phenomenal [bash-powerline](http://learn.makerpass.com/groups/mks-52/courses/reactorcore/course.syllabus?s=3&p=5) by [riobard](https://github.com/riobard).
+
+The theme used in the screenshot is [Tomorrow Night Eighties](https://github.com/chriskempson/tomorrow-theme/tree/master/OS%20X%20Terminal) by [chriskempson](https://github.com/chriskempson).
